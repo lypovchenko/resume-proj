@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+}
+footer {
+    padding: 3rem;
+}
+
+.cantata-one-regular {
+  font-family: "Cantata One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.nunito-sans-txt {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: justify;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #B9D7EA, #769FCD, #355C7D);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+section {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+/* containers settings */
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr 1fr;
+}
+#my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-row: span 2;
+}
+.about-me.container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.before-footer {
+    margin-bottom: 3em;
+}
+.links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* txt settings */
+#my-info .main-txt {
+    width: 75%;
+}
+.about-me.container > .main-txt {
+    margin: 1rem;
+}
+.top-container > .head-txt {
+    grid-column: span 2;
+}
+.before-footer > .nunito-sans-txt {
+    text-align: center;
+}
+.before-footer > p {
+    margin-bottom: 3rem;
+}
+.links a {
+    color: black;
+}
+#copyright {
+    padding-top: 2rem;
+    color: white;
+}
+/* img settings */
+.img {
+    width: 100px;
+}
+.pfp.img {
+    border-radius: 50%;
+}
+#top-img {
+    float: right;
+    height: 20em;
+    grid-column: span 2;
+}
+
+hr {
+    border: dashed #769FCD 4px;
+    border-bottom: none;
+    width: 5%;
+    margin: 50px auto;
+}
+
+.btn {
+    border-radius: 8px ;
+    padding: 8px;
+    background-image: linear-gradient(to bottom, #B9D7EA, #769FCD);
+    /* font-family: "Nunito Sans", sans-serif; */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    color: #355C7D;
+    font-weight: bold;
+}
